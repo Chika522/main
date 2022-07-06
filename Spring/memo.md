@@ -18,6 +18,15 @@
 * プラグインのインストール確認
 * Lombokのインストール確認
 * プロジェクトの作成
+* 選択したライブラリ
+  * Spring Boot DevTools（Webアプリケーションを自動で再起動してくれる、開発効率を上げるための補助ツール）
+  * Lombok
+  * JDBC API, Spring Data JDBC（SpringでJDBCを使ってSQLを実行できるようになる）
+  * H2（セットアップが不要なH2データベースを使えるようになる）
+  * Thymeleaf（HTMLのテンプレートエンジン＝HTMLのテンプレートとデータを合成して、HTMLを作成してくれる機能のこと）
+  * Spring Web（Spring MVCを使って、Webアプリケーションの開発ができるようになる）
+* プロジェクト管理ツール
+  * Maven（ライブラリの依存関係などを管理してくれる）
 
 
-## ✏️3章　
+## ✏️3章　Hello World 簡単なサンプル
