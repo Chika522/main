@@ -36,4 +36,6 @@
   * クラスファイルの設置場所を間違えている
   * htmlの記述がどこか間違えている
   * build.gardleファイルにおいて必要な記述が抜けている
-  * application.propertyにおいて正確な情報を記載していない　　 　　 
+  * application.propertyにおいて正確な情報を記載していない
+🌟以下の方法で解決 
+[SpringBootのポート指定方法](https://springhack.com/springboot%e3%81%ae%e3%83%9d%e3%83%bc%e3%83%88%e6%8c%87%e5%ae%9a%e6%96%b9%e6%b3%95-web-server-failed-to-start-port-8080-was-already-in-use-%e3%80%80/)
