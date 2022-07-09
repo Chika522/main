@@ -30,7 +30,7 @@
 
 
 ## ✏️3章　Hello World 簡単なサンプル
-💥Whitelabel Error Page
+💥Whitelabel Error Pageのエラーになってしまった
 * 考えられるエラーの原因 
   * アノテーションの入力ミスか未入力 　
   * クラスファイルの設置場所を間違えている
