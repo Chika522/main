@@ -108,5 +108,6 @@ DIを使うためには@Autowiredアノテーションを使う。
 　　
 　　
 🔖  
-* Bootstrap： 画面をデザインする際に使われるフレームワーク
-* webjars: Bootstrapを使うためのライブラリ、ライブラリのダウンロードや読み込みなど簡単に行える
+* Bootstrap： 画面をデザインする際に使われるフレームワーク、JavascriptのライブラリであるjQueryが必要  
+* webjars: JavascriptやCSSのライブラリをMavenで使用できるようにするライブラリ
+* 
