@@ -29,7 +29,21 @@
   * Maven（ライブラリの依存関係などを管理してくれる）
 
 
-## ✏️3章　Hello World 簡単なサンプル
+## ✏️3章　Hello World 簡単なサンプル  
+* 3.1 HTMLの表示
+  * @Controller
+  * @GetMapping（受け付けるURLを引数に設定する）  
+
+* 3.2 画面から別画面に値を渡す
+  * @PostMapping（POSTメソッドのHTTPリクエストを受け取る）
+  * @RequestParam（画面で入力された値をサーバーが受け取る）
+  * Modelクラス（別の画面に値を渡すことができる）  
+
+* 3.3 データベースから値を取得する  
+  * @Dataアノテーション
+  * @Repository
+  * @Autowired（DIを使うためのアノテーション）
+
 💥Whitelabel Error Pageのエラーになってしまった
 * 考えられるエラーの原因 
   * アノテーションの入力ミスか未入力 　
@@ -40,3 +54,7 @@
 
 🌟次の方法で解決 （8080ポートが既に使われていてサーバーが起動できなかったのが原因？）
 [SpringBootのポート指定方法](https://springhack.com/springboot%e3%81%ae%e3%83%9d%e3%83%bc%e3%83%88%e6%8c%87%e5%ae%9a%e6%96%b9%e6%b3%95-web-server-failed-to-start-port-8080-was-already-in-use-%e3%80%80/)
+  
+  
+## ✏️4章　Webアプリケーションの概要  
+
