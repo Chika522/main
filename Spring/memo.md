@@ -118,7 +118,14 @@ DIを使うためには@Autowiredアノテーションを使う。
 * @DataTimeFormat：Data型にバインドする際に使うアノテーション
 * @NumberFormat：指定されたフォーマットの文字列を数値型に変換する際に使用するアノテーション
 * @ModelAttribute：自動でModelにインスタンスを登録してくれるアノテーション
-* @Slf4j：Lombokのアノテーション、slf4jを使って簡単にログ出力ができる
+* @Slf4j：Lombokのアノテーション、slf4jを使って簡単にログ出力ができる  
+  
+### エラーメッセージ  
+* ValidationMessages：spring.messages.basenameには複数のメッセージ用ファイルをカンマ区切りで指定できる、すべてのメッセージを一つに集約するか、ファイルを分割するかはアプリケーション次第、ファイルを分割する際は、キー名の重複が起きないように気を付ける
+* バインドエラーメッセージ  
+  * typeMismatch.Modelのキー名.フィールド名=エラーメッセージ
+  * typeMismatch.フィールド名=エラーメッセージ
+  * typeMismatch.フィールドのデータ型=エラーメッセージ
 
   
 🔖  
