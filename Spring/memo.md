@@ -128,14 +128,24 @@ DIを使うためには`@Autowired`アノテーションを使う。
 ### エラーメッセージ  
 * ValidationMessages：spring.messages.basenameには複数のメッセージ用ファイルをカンマ区切りで指定できる、すべてのメッセージを一つに集約するか、ファイルを分割するかはアプリケーション次第、ファイルを分割する際は、キー名の重複が起きないように気を付ける
 * バインドエラーメッセージ  
-  * typeMismatch.Modelのキー名.フィールド名=エラーメッセージ
-  * typeMismatch.フィールド名=エラーメッセージ
-  * typeMismatch.フィールドのデータ型=エラーメッセージ
+  * `typeMismatch.Modelのキー名.フィールド名=エラーメッセージ` ex) typeMismatch.signupForm.age=数値を入力してください  
+    Modelのキーごと、フィールド名ごとにエラーメッセージを設定する
+  * `typeMismatch.フィールド名=エラーメッセージ` ex) typeMismatch.age=数値を入力してください  
+    フィールド名ごとにエラーメッセージを設定する、exはすべてのageフィールドに対して同じエラーメッセージが設定される
+  * `typeMismatch.フィールドのデータ型=エラーメッセージ` ex) typeMismatch.int=数値を入力してください  
+    データ型ごとにエラーメッセージを設定する、exはint型のフィールドすべてにエラーメッセージが設定される  
+  
+### バリデーション：入力チェック  
+🌟Springではアノテーションを付けるだけで簡単にバリデーションを実装できる  
+  * `@Validated`: クラスに付けるとバリデーションが実行される  
+  * バリデーションの結果は`BindingResult`に入れられる
+  * バリデーションエラーメッセージの編集方法: `[アノテーション名=エラーメッセージ]` いろいろあるけどこれが簡単
 
   
 🔖  
-* Bootstrap： 画面をデザインする際に使われるフレームワーク、JavascriptのライブラリであるjQueryが必要  
-* webjars: JavascriptやCSSのライブラリをMavenで使用できるようにするライブラリ
-* PRGパターン: POSTメソッドの後にリダイレクトして画面遷移(GETメソッドの実行)すること=POST-Redirect-GET  
+* `Bootstrap`： 画面をデザインする際に使われるフレームワーク、JavascriptのライブラリであるjQueryが必要  
+* `webjars`: JavascriptやCSSのライブラリをMavenで使用できるようにするライブラリ
+* `PRGパターン`: POSTメソッドの後にリダイレクトして画面遷移(GETメソッドの実行)すること=POST-Redirect-GET 
+* `BindingResult`: バインドエラーやバリデーションエラーが発生しているかどうか確認できるメソッド、`hasErrors()`メソッドの結果がtrueの場合はエラーが発生している  
   
 ---
