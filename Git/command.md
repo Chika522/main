@@ -1,5 +1,11 @@
 ## 💻Gitコマンドまとめ  
-
+🌟何回打っても何も変更されない安心コマンド 🥰  
+* `$ git branch` リモート追跡ブランチ以外のLocal branch確認  
+* `$ git branch -a` すべてのLocal branch確認
+* `$ git status` ファイル状態確認
+* 
+  
+---
 `clone`  
 `init`  
 `config`  
