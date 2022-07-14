@@ -9,8 +9,8 @@
 
 
 ### 🔖 
-* IoC（Inversion of Control）: 制御の逆転＝作ったプログラムが呼び出される側になること
-* DI: 依存性の注入
+* `IoC（Inversion of Control）`: 制御の逆転＝作ったプログラムが呼び出される側になること
+* `DI`: 依存性の注入
 
 ---
 
@@ -20,39 +20,39 @@
 * Lombokのインストール確認
 * プロジェクトの作成
 * 選択したライブラリ
-  * Spring Boot DevTools（Webアプリケーションを自動で再起動してくれる、開発効率を上げるための補助ツール）
-  * Lombok
-  * JDBC API, Spring Data JDBC（SpringでJDBCを使ってSQLを実行できるようになる）
-  * H2（セットアップが不要なH2データベースを使えるようになる）
-  * Thymeleaf（HTMLのテンプレートエンジン＝HTMLのテンプレートとデータを合成して、HTMLを作成してくれる機能のこと）
-  * Spring Web（Spring MVCを使って、Webアプリケーションの開発ができるようになる）
+  * `Spring Boot DevTools`（Webアプリケーションを自動で再起動してくれる、開発効率を上げるための補助ツール）
+  * `Lombok`
+  * `JDBC API`, `Spring Data JDBC`（SpringでJDBCを使ってSQLを実行できるようになる）
+  * `H2`（セットアップが不要なH2データベースを使えるようになる）
+  * `Thymeleaf`（HTMLのテンプレートエンジン＝HTMLのテンプレートとデータを合成して、HTMLを作成してくれる機能のこと）
+  * `Spring Web`（Spring MVCを使って、Webアプリケーションの開発ができるようになる）
 * プロジェクト管理ツール
-  * Maven（ライブラリの依存関係などを管理してくれる）
+  * `Maven`（ライブラリの依存関係などを管理してくれる）
 
 ---
 
 ## ✏️3章　Hello World 簡単なサンプル  
 * 3.1 HTMLの表示
-  * @Controller
-  * @GetMapping（受け付けるURLを引数に設定する）  
+  * `@Controller`
+  * `@GetMapping`（受け付けるURLを引数に設定する）  
 
 * 3.2 画面から別画面に値を渡す
-  * @PostMapping（POSTメソッドのHTTPリクエストを受け取る）
-  * @RequestParam（画面で入力された値をサーバーが受け取る）
+  * `@PostMapping`（POSTメソッドのHTTPリクエストを受け取る）
+  * `@RequestParam`（画面で入力された値をサーバーが受け取る）
   * Modelクラス（別の画面に値を渡すことができる）  
 
 * 3.3 データベースから値を取得する  
-  * @Dataアノテーション
-  * @Repository
-  * @Autowired（DIを使うためのアノテーション）
+  * `@Data`アノテーション
+  * `@Repository`
+  * `@Autowired`（DIを使うためのアノテーション）
 
 💥Whitelabel Error Pageのエラーになってしまった
 * 考えられるエラーの原因 
   * アノテーションの入力ミスか未入力 　
   * クラスファイルの設置場所を間違えている
   * htmlの記述がどこか間違えている
-  * build.gardleファイルにおいて必要な記述が抜けている
-  * application.propertyにおいて正確な情報を記載していない 
+  * `build.gardle`ファイルにおいて必要な記述が抜けている
+  * `application.property`において正確な情報を記載していない 
 
 🌟次の方法で解決 （8080ポートが既に使われていてサーバーが起動できなかったのが原因？）
 [SpringBootのポート指定方法](https://springhack.com/springboot%e3%81%ae%e3%83%9d%e3%83%bc%e3%83%88%e6%8c%87%e5%ae%9a%e6%96%b9%e6%b3%95-web-server-failed-to-start-port-8080-was-already-in-use-%e3%80%80/)
@@ -104,7 +104,7 @@ DIを使うためには`@Autowired`アノテーションを使う。
 🔖  
 * インスタンスの生成：クラスをnewすること
 * インスタンスの破棄：変数にnullを代入すること
-* スコープ：インスタンスが生存する期間のこと（スコープを指定するためには@Scopeアノテーションを付ける）
+* スコープ：インスタンスが生存する期間のこと（スコープを指定するためには`@Scope`アノテーションを付ける）
 * Bean：DIコンテナー（DI対象クラスの管理をしてくれる入れ物）に登録されているクラス　　
   
 ---
@@ -165,9 +165,8 @@ DIを使うためには`@Autowired`アノテーションを使う。
 #### 🌟基本  
 * Mybatisを使う為には、Javaのインターフェイスに`@Mapper`アノテーションをつける
 * mapperタグの`namespase属性`を使って、Javaのインターフェイスとxmlファイルをマッピングする
-* insertタグなどの(`id属性`)を使ってメソッドとSQLをマッピングする 
-* SQLにメソッドの引数を埋め込む場合は、`#{パラメーター名} と指定する
+* insertタグなどの`id属性`を使ってメソッドとSQLをマッピングする 
+* SQLにメソッドの引数を埋め込む場合は、`#{パラメーター名}` と指定する
 * select結果を返すには`resultType`と`resultMap`の属性を使う
-* resultMap属性を使えば、
-* insertタグなどの(`id属性`)を使ってメソッドとSQLをマッピングする s
-* insertタグなどの(`id属性`)を使ってメソッドとSQLをマッピングする 
+* `resultMap属性`を使えば、様々なケースに対応したO/Rマッピングができる
+* `@Param`アノテーション
