@@ -41,7 +41,7 @@
 `config`  
 `remote add`  
 ---
-### 🐈気兼ねなく使ってOK
+### 🐈気兼ねなく使ってOK  
 `pull`
 `push`  
 `branch`  
@@ -52,7 +52,7 @@
 `status`  
 `add`  
 ---
-### ⚠️気をつけつつ使う
+### ⚠️気をつけつつ使う  
 `merge develop -> 作業中のブランチ` (大丈夫。むしろこまめに)  
 `merge 作業中のブランチ -> develop` (気を付ける！github上でやってもらう方が安全)  
 `reset --soft HEAD` (commitの取り消し。commit前の状態に戻るので、編集した部分は残る。未pushのcommitに対してなら大丈夫。push後のcommitだと 😵‍💫  
