@@ -7,7 +7,7 @@ let score = 0;
 const untypedfield = document.getElementById('untyped');
 const typedfield = document.getElementById('typed');
 const wrap = document.getElementById('wrap');
-const start = document.getElementById('start');
+const start = document.getElementById('button');
 const count = document.getElementById('count');
 
 // 複数のテキストを格納する配列
@@ -140,4 +140,4 @@ start.addEventListener('click', () => {
     document.addEventListener('keypress', keyPress);
 });
 
-untypedfield.textContent = 'スタートボタンで開始';
+untypedfield.textContent = 'STARTを押してね';
